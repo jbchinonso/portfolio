@@ -4,7 +4,7 @@
 }
 body{
     background: rgba(248, 246, 246, 0.932);
-    overflow: hidden;
+   
 }
 .container{
     width: 100%;
@@ -43,7 +43,7 @@ nav ul li a{
     color: #000;
 }
 .photo{
-    background: url('pix.png');
+    background: url('images/pix.png');
     width: 200px;
     height: 200px;
     margin: 20px auto;
@@ -99,7 +99,6 @@ ol li{
 footer{
     background: #000;
     text-align: center;
-    width: inherit;
     color: #fff;
     padding: 10px;
     position: relative;
@@ -110,12 +109,90 @@ footer{
     position: fixed;
     bottom: 2px;
 }
+.contact-flex{
+    background: url('images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rebeccapurple;
+    width: 100%;
+    margin-top: 2px;;
+    height: 150px;
+}
+.contact-flex h1{
+   padding-top: 30px;
+}
+.contact-desc{
+    color: #000;
+}
+.call{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid rgb(202, 199, 199);
+    
+}
+.call-img{
+    background: url('images/phone.png') no-repeat;
+    background-color: rgb(219, 219, 216);
+    width: 100px;
+    margin: 10px auto;
+    height: 100px;
+    background-size: 100px;
+    border-radius: 360px;
+    background-position: center;
+}
+.mail{
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid rgb(219, 219, 216);
+    
+}
+.mail-img{
+    background: url('images/mail.png') no-repeat;
+    background-color: rgb(219, 219, 216);
+    width: 100px;
+    margin: 10px auto;
+    height: 100px;
+    background-size: 100px;
+    border-radius: 360px;
+    background-position: center;
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+.contact-field{
+    padding: 10px;
+    width: 90%;
+    margin: 5px;
+   
+}
+.contact-field, textarea:focus{
+    outline-color: rebeccapurple;
+}
+textarea{
+    line-height: 1;
+    width: 90%;
+    height: 100px;
+    margin: 5px;
+    padding: 10px;
+}
+.submit{
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    background-color: rebeccapurple;
+    color: #fff;
+    border-radius: 5px;
+}
 
 @media only screen and (min-width:768px){
 
 .photo{
     float: left;
-    background: url('mypix.png');
+    background: url('images/mypix.png');
     background-position: top;
     width: 50%;
     height: 600px;
