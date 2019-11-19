@@ -2,14 +2,15 @@
     padding: 0;
     margin: 0;
 }
-body{
+html,body{
     background: rgba(248, 246, 246, 0.932);
-   
+    height: 100%;
 }
 .container{
     width: 100%;
     margin: 0 auto;
-    height: auto;
+    min-height: 100%;
+    padding-bottom: 50px;
     background: rgba(248, 246, 246, 0.932);
     
 }
@@ -105,10 +106,7 @@ footer{
     bottom: 2px;
 }
 
-.fixed{
-    position: fixed;
-    bottom: 2px;
-}
+
 .contact-flex{
     background: url('images/contact.jpg');
     background-size: cover;
@@ -228,6 +226,17 @@ textarea{
 }
 .readme a{
     color: #fff;
+}
+
+.call{
+    float: left;
+    width: 48%;
+    
+}
+.mail{
+    float: right;
+    width: 48%;
+    
 }
 
 }
