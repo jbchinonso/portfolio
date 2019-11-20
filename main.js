@@ -1,7 +1,7 @@
 const errorBox = document.querySelector('.msg')
 errorBox.style.color = 'red'
 const myForm = document.getElementById('myform')
-const pattern = /[A-Z0-9.+%$]+@[A-Z0-9.+]+.[A-Z0-9]{2,4}/igm
+const pattern = /[A-Z0-9.+%$]+@[A-Z0-9.]+.[A-Z0-9]{2,4}/igm
 
 myForm.addEventListener('submit', (e) =>{
     e.preventDefault();
