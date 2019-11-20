@@ -27,11 +27,12 @@
             </div>
             <div class="mail">
                 <div class="mail-img"></div>
-                <form>
-                    <input type="text" class="contact-field" placeholder="Name">
-                    <input type="email" class="contact-field" placeholder="Email">
-                    <input type="text" class="contact-field" placeholder="Subject">
-                    <textarea> Message</textarea>
+                <div class="msg"></div>
+                <form id = 'myform'>
+                    <input type="text" id="name" class="contact-field" placeholder="Name">
+                    <input type="email" id="mail" class="contact-field" placeholder="Email">
+                    <input type="text" id="subject" class="contact-field" placeholder="Subject">
+                    <textarea id = message placeholder="Enter your message"> </textarea>
                     <input type="submit" class="submit" value="Send">
                 </form>
             </div>
@@ -43,6 +44,7 @@
             var date = new Date();
             document.write('all right reservered @ ' + date.getFullYear() + ' content') 
         </script>
+        <script src="main.js"></script>
     </footer>
 </body>
 </html>
