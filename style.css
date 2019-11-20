@@ -10,6 +10,7 @@ html,body{
     width: 100%;
     margin: 0 auto;
     min-height: 100%;
+    overflow: auto;
     padding-bottom: 50px;
     background: rgba(248, 246, 246, 0.932);
     
@@ -46,7 +47,7 @@ nav ul li a{
 .photo{
     background: url('images/pix.png');
     width: 200px;
-    height: 200px;
+    min-height: 200px;
     margin: 20px auto;
     background-position: top;
     background-size: cover;
@@ -85,6 +86,7 @@ nav ul li a{
 h3{
     padding: 1px;
     margin-top: 10px;
+    text-align: center;
 }
 
  ol{
@@ -94,9 +96,10 @@ h3{
 }
 ol li{
     padding: 5px;
-    margin-left: 5px;
-    list-style: circle;
+    list-style: none;
+    
 }
+
 footer{
     background: #000;
     text-align: center;
@@ -140,14 +143,14 @@ footer{
     border-radius: 360px;
     background-position: center;
 }
-.mail{
+.mail, .skill, .edu{
     width: 90%;
     padding: 10px;
     margin: 10px auto;
     border: 1px solid rgb(219, 219, 216);
     
 }
-.mail-img{
+.mail-img, .skill-img, .edu-img{
     background: url('images/mail.png') no-repeat;
     background-color: rgb(219, 219, 216);
     width: 100px;
@@ -157,6 +160,13 @@ footer{
     border-radius: 360px;
     background-position: center;
 }
+.skill-img{
+    background: url('images/skill.png') no-repeat;
+}
+.edu-img{
+    background: url('images/education.png') no-repeat;
+}
+
 form{
     width: 100%;
     text-align: center;
@@ -185,22 +195,63 @@ textarea{
     color: #fff;
     border-radius: 5px;
 }
+.institution{
+    font-weight: bolder;
+    border-left: 2px solid rebeccapurple;
+    margin-top: 15px;
+}
+.cert{
+    margin-left: 15px;
+    font-style: italic;
+    
+}
+.active{
+    color: rebeccapurple;
+    
+}
 
 @media only screen and (min-width:768px){
 
 .photo{
     float: left;
     background: url('images/mypix.png');
-    background-position: top;
+    background-position:top;
     width: 50%;
     height: 600px;
     margin-top: 20px;
     border-radius: 0px;
 }
+
+.myphoto{
+    background: url('images/pix.png');
+    width: 200px;
+    height: 200px !important;
+    margin: 20px auto;
+    background-position: top;
+    background-size: cover;
+    margin-top: 20px;
+    border-radius: 250px;
+    float: none !important;
+}
 .details{
     float: right;
     width: 49%;
 }
+
+.about-details{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.skill{
+    float: left;
+    width: 45%;
+}
+.edu{
+    float: right;
+    width: 49%;
+}
+
 .name{
     
     position: relative;
@@ -216,6 +267,21 @@ textarea{
     padding: 15px;
     margin-bottom: 20px;
     
+}
+
+.my-name{
+    padding: 5px !important;
+    top: 0 !important;
+    margin-bottom: 10px !important;
+    border-left: 0px solid rebeccapurple !important;
+    text-align: center !important;
+}
+
+
+.my-story{
+    padding: 10px;
+    font-size: 18px;
+    text-align: center !important;
 }
 .readme{ 
     top: 30px;
