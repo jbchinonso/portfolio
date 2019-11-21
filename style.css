@@ -241,7 +241,10 @@ textarea{
     float: right;
     width: 49%;
 }
-
+.contact-details{
+    width: 85%;
+    margin: 0 auto;
+}
 .about-details{
     width: 90%;
     margin: 0 auto;
@@ -300,12 +303,12 @@ textarea{
 
 .call{
     float: left;
-    width: 48%;
+    width: 47%;
     
 }
 .mail{
     float: right;
-    width: 48%;
+    width: 47%;
     
 }
 
