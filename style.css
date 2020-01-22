@@ -38,7 +38,7 @@ nav{
 
 nav ul{
     position: absolute;
-    left: 70%;
+    right: 0;
     top:50px;
     width: 150px;
     height: 100vh;
