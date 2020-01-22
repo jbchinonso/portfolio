@@ -20,29 +20,55 @@ nav{
     height: 50px;
     border-bottom: 2px solid rebeccapurple;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ .home a{
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+    margin: 10px;
+    padding: 2px;
+   
 }
 
 nav ul{
-    width: 70%;
-    margin: auto;
+    position: absolute;
+    left: 70%;
+    top:50px;
+    width: 150px;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    background: rebeccapurple;
     font-family: Arial, Helvetica, sans-serif;
-    
+    display: none;
+}
+.display{
+    display:inline;
 }
 nav ul li{
     position: relative;
-    top: 20px;
     margin: 10px;
     padding: 2px;
     list-style: none;
-   
     
 }
+
 nav ul li a{
     text-decoration: none;
-    color: #000;
+    color: #fff;
+}
+.mobile-menu{
+    align-self: flex-end;
+}
+.mobile-menu img{
+    width: 40px;
+    height: 40px;
 }
 .photo{
     background: url('images/pix.png');
@@ -96,8 +122,8 @@ h3{
 }
 ol li{
     padding: 5px;
+    margin: 10px;
     list-style: none;
-    
 }
 .msg{
     color: red;
@@ -209,13 +235,49 @@ textarea{
     font-style: italic;
     
 }
+.capacity{
+    width: 70%;
+    height: 15px;
+    float: right;
+    border: 1px solid rgba(11, 82, 104, 0.774);
+    margin-right: 5%;
+    border-radius: 10px;
+}
+.level{
+    height: 15px;
+    background: rebeccapurple;
+    width: 20%;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width:768px){
+nav ul{
+    position: static;
+    width: auto;
+    display: flex;
+    flex-grow: 3;
+    flex-direction: row-reverse;
+    background: none;
+    margin-right: 200px;
+     
+}
+nav ul li{
+    top: 20px;
+    order:-1;
+}
+
+
+nav ul li a{
+    color: #000;
+}
+.mobile-menu{
+    display: none;
+}
+
 .active{
     color: rebeccapurple;
     
 }
-
-@media only screen and (min-width:768px){
-
 .photo{
     float: left;
     background: url('images/mypix.png');
