@@ -3,7 +3,7 @@
     margin: 0;
 }
 html,body{
-    background: rgba(248, 246, 246, 0.932);
+    
     height: 100%;
 }
 .container{
@@ -12,7 +12,7 @@ html,body{
     min-height: 100%;
     overflow: auto;
     padding-bottom: 50px;
-    background: rgba(248, 246, 246, 0.932);
+   
     
 }
 nav{
@@ -28,6 +28,7 @@ nav{
  .home a{
     text-transform: uppercase;
     font-weight: 700;
+    color: rebeccapurple;
     text-decoration: none;
     position: relative;
     top: 30px;
@@ -65,10 +66,11 @@ nav ul li a{
 }
 .mobile-menu{
     align-self: flex-end;
+   
 }
 .mobile-menu img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
 }
 .photo{
     background: url('images/pix.png');

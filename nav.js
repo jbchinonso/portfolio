@@ -1,14 +1,18 @@
 const menu = document.querySelector('.mobile-menu img')
 const navbar = document.querySelector('.navbar')
 const body = document.querySelector('body')
-menu.addEventListener('click',()=>{
+menu.addEventListener('click',(e)=>{
     navbar.classList.toggle('display')
+    if(e.target !== menu) navbar.className = "";
 })
 
-body.onclick = function(){    
+window.onclick = function(e){    
    // navbar.style.display = "none"
-    
-}
+    //if(navbar.className = "display"){
+      //  navbar.className = ""
+      if(e.target !== menu) navbar.className = "";
+    }
+//}
 
 const html = document.querySelector('.html .capacity .level')
 const css = document.querySelector('.css .capacity .level')
