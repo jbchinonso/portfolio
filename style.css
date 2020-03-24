@@ -12,8 +12,7 @@ html,body{
     min-height: 100%;
     overflow: auto;
     padding-bottom: 50px;
-   
-    
+    background: url('images/background.jpg')
 }
 nav{
     width: inherit;
@@ -73,7 +72,7 @@ nav ul li a{
     height: 35px;
 }
 .photo{
-    background: url('images/pix.png');
+    background: url('images/pix');
     width: 200px;
     min-height: 200px;
     margin: 20px auto;
@@ -282,7 +281,7 @@ nav ul li a{
 }
 .photo{
     float: left;
-    background: url('images/jb.jpg');
+    
     background-position: top;
     background-size: cover;
     width: 50%;
