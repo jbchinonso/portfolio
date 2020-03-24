@@ -282,10 +282,11 @@ nav ul li a{
 }
 .photo{
     float: left;
-    background: url('images/mypix.png');
-    background-position:top;
+    background: url('images/jb.jpg');
+    background-position: top;
+    background-size: cover;
     width: 50%;
-    height: 600px;
+    height: 100vh;
     margin-top: 20px;
     border-radius: 0px;
 }
