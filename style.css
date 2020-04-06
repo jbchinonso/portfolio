@@ -6,13 +6,24 @@ html,body{
     
     height: 100%;
 }
+.index-bg{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('images/background.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-weight: 800;
+    color: #fff;
+   
+
+}
 .container{
+    
     width: 100%;
     margin: 0 auto;
     min-height: 100%;
     overflow: auto;
     padding-bottom: 50px;
-    background: url('images/background.jpg')
+    
 }
 nav{
     width: inherit;
@@ -27,7 +38,7 @@ nav{
  .home a{
     text-transform: uppercase;
     font-weight: 700;
-    color: rebeccapurple;
+    color: #000;
     text-decoration: none;
     position: relative;
     top: 30px;
@@ -72,7 +83,7 @@ nav ul li a{
     height: 35px;
 }
 .photo{
-    background: url('images/pix');
+    background: url('images/pix.png');
     width: 200px;
     min-height: 200px;
     margin: 20px auto;
@@ -281,13 +292,14 @@ nav ul li a{
 }
 .photo{
     float: left;
-    
+    background: url('images/pix.png');
+    width: 200px;
+    height: 200px !important;
+    margin: 20px auto;
     background-position: top;
     background-size: cover;
-    width: 50%;
-    height: 100vh;
     margin-top: 20px;
-    border-radius: 0px;
+    border-radius: 250px;
 }
 
 .myphoto{
@@ -302,8 +314,8 @@ nav ul li a{
     float: none !important;
 }
 .details{
-    float: right;
-    width: 49%;
+   margin: 0 auto;
+    width: 50%;
 }
 .contact-details{
     width: 85%;
