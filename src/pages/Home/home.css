@@ -1,0 +1,32 @@
+.homepage{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contentWrapper{
+        padding: 70px 50px;
+    }
+
+.container{
+    height: calc(100vh - 6.25rem);
+    
+}
+
+.hero{
+        padding-top: 3rem;
+}
+
+@media only screen and (min-width:769px) {
+    
+.contentWrapper{
+        padding: 0 400px;
+    }
+
+    .hero{
+        padding-top: 8rem;
+        
+    }
+
+    
+
+}
