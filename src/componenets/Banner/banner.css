@@ -1,0 +1,84 @@
+#bannerSection {
+  text-align: left;
+}
+
+#bannerSection .bannerStatement {
+  /* padding: 70px 50px; */
+}
+
+#bannerSection .bannerStatement .greeting{
+  padding: 20px 0;
+  color: #87E7D4;
+  font-weight: 500;
+}
+
+#bannerSection .bannerStatement h1 {
+  font-size: clamp(2.5rem, 3.5vw, 5rem);
+  padding: 10px 0;
+  color: #e0e0e2;
+  line-height: 1;
+}
+
+#bannerSection .bannerStatement .skill {
+  font-size: clamp(1.875rem, 3.5vw, 4rem);
+  font-weight: 700;
+  color: #a9a9aa;
+}
+
+#bannerSection .bannerStatement .skill-description {
+  /* width: 80%; */
+  padding: 1.5rem 0;
+  line-height: 2;
+  color: #9a9a9b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#bannerSection .bannerStatement .button{
+    padding: 15px 30px;
+    border: solid 2px #87E7D4;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    background: transparent;
+    color: #87E7D4;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+  #bannerSection .bannerStatement {
+    /* padding: 0 400px; */
+  }
+
+  #bannerSection .bannerStatement .skill-description {
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+  #bannerSection .bannerStatement {
+    padding: 10px 25px;
+  }
+  #bannerSection .bannerStatement h1 {
+    font-size: clamp(2rem, 6vw, 5rem);
+  }
+
+  #bannerSection .bannerStatement .skill {
+    font-size: clamp(1.5625rem, 4vw, 4rem);
+  }
+
+  #bannerSection .bannerStatement .skill-description {
+    width: 100%;
+    font-size: 14px;
+  }
+}
