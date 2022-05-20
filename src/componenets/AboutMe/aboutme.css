@@ -1,0 +1,36 @@
+.aboutme{
+
+}
+
+.aboutHeader{
+    position: relative;
+    display: flex;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.aboutHeader .aboutNo{
+    display: block;
+    color: #87E7D4;
+    margin-right: 10px;
+}
+
+.aboutHeader .aboutText{
+    color: #e0e0e2;
+}
+
+.aboutHeader .aboutText::after{
+    content: "";
+    position: absolute;
+    top: calc(50%);
+    right: 0;
+    height: 2px;
+    width: 100%;
+    background: #e0e0e2;
+}
+
+p{
+    line-height: 1.8;
+    font: 14px;
+}
