@@ -1,0 +1,35 @@
+.socials{
+    display: none;
+}
+
+@media only screen and (min-width:769px) {
+    .socials{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left : 3.75rem;
+    }
+
+    .socials .social-icon a svg{
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        stroke: #FAFAFB;
+    }
+
+    .socials .social-icon svg:hover {
+        stroke: #87E7D4;
+    }
+
+    .socials .pole{
+    height: 150px;
+    width: 1px;
+    padding: .5px;
+    margin-top: 20px;
+    background: #9a9a9b;
+    }
+}

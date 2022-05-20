@@ -1,0 +1,33 @@
+.email__container{
+    display: none;
+}
+
+@media only screen and (min-width:769px) {
+.email__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 3.75rem;
+    bottom: 0;
+}
+
+.email__container .email_char{
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    transform: rotate(90deg);
+}
+
+
+.email__container .pole{
+    height: 150px;
+    width: 1px;
+    padding: .5px;
+    margin-top: 40px;
+    background: #9a9a9b;
+}
+
+}
