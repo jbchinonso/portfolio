@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import './banner.css'
 
 function Banner() {
+  const navigate = useNavigate()
   return (
     <section id="bannerSection">
       <div className="bannerStatement">
@@ -13,7 +15,7 @@ function Banner() {
           my ability to ensure improvement in the Establishment while enjoying
           self-development and job satisfaction.
         </div>
-        <button className="button">
+        <button className="button" onClick={() => navigate('/home')}>
           Checkout my blogs
         </button>
       </div>

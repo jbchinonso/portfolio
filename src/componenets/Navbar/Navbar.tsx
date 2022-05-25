@@ -12,7 +12,9 @@ const Navbar: React.FC = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src={JB} alt="JB logo" />
+        <Link to={{ pathname: "/", hash: "" }}>
+          <img src={JB} alt="JB logo" />
+        </Link>
       </div>
 
       <div
@@ -26,7 +28,7 @@ const Navbar: React.FC = () => {
       <nav className={open ? "nav-links show" : "nav-links"}>
         <ul data-testid="nav">
           <li>
-            <Link to="/">
+            <Link to={{ pathname: "/", hash: "#aboutme" }} state = {{ fromNav: true }} >
               <span className="nav-num"> 01.</span> About
             </Link>
           </li>

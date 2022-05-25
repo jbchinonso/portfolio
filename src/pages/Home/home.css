@@ -19,7 +19,8 @@
 @media only screen and (min-width:769px) {
     
 .contentWrapper{
-        padding: 0 400px;
+        /* padding: 0 400px; */
+        padding: 0 20%;
     }
 
     .hero{
@@ -27,6 +28,12 @@
         
     }
 
-    
+}
 
+
+
+@media only screen and (max-width:500px) {
+.contentWrapper{
+        padding: 30px 20px;
+    }
 }

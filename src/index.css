@@ -1,13 +1,14 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
   font-family: 'Poppins',sans-serif, 'Nunito', 'Segoe UI', 'Roboto', 'Oxygen';
   background: #16082F;
-  color:#9a9a9b;;
+  color:#9a9a9b;
   text-align: initial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

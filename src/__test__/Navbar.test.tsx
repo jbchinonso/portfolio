@@ -13,7 +13,8 @@ describe('Test suite for the Navbar', () => {
           </Router>
         );
         const logo = screen.getByAltText("JB logo");
-        expect(logo).toBeInTheDocument()
+      expect(logo).toBeInTheDocument()
+      expect(logo).toHaveAccessibleName("JB logo");
     });
 
 
