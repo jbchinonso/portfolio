@@ -33,3 +33,14 @@
     background: #9a9a9b;
     }
 }
+
+@media only screen 
+  and (min-device-width: 1024px)
+  and (min-device-pixel-ratio : 2.0)
+  and (orientation: landscape) {
+
+  .socials{
+    display: none;
+}
+
+}
