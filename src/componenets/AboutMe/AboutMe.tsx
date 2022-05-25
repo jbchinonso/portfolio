@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import {useLocation} from 'react-router-dom'
 import Paragraph from "../Paragraph/Paragraph";
 import "./aboutme.css";
-import photo from "../../images/me.jpg";
 
 function AboutMe() {
   const aboutRef = useRef<HTMLElement>(null);

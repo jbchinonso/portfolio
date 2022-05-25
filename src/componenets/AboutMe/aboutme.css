@@ -1,6 +1,10 @@
 .aboutme {
 }
 
+#aboutme{
+    transition: ease-in 1;
+}
+
 .aboutHeader {
   display: flex;
   align-items: center;
