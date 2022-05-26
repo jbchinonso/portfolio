@@ -8,7 +8,8 @@
     }
 
 .container{
-    height: calc(100vh - 6.25rem);
+    /* height: calc(100vh - 6.25rem); */
+    height: clamp(400px, 100vh - 6.25rem, 2000px );
     
 }
 
@@ -36,4 +37,24 @@
 .contentWrapper{
         padding: 30px 20px;
     }
+}
+
+
+@media only screen 
+  and (max-device-width: 1024px)
+  /* and (min-device-pixel-ratio : 2.0) */
+  and (orientation: landscape) 
+  {
+
+ .container{
+    height: auto;
+    margin-bottom: 100px;
+    
+}
+
+.contentWrapper{
+        /* padding: 0 400px; */
+        padding: 0 10%;
+    }
+
 }
