@@ -1,16 +1,21 @@
 import React, { useEffect, useRef } from "react";
 import {useLocation} from 'react-router-dom'
 import Paragraph from "../Paragraph/Paragraph";
+import {useHamburgerContext} from '../../context/hamburgerContext'
 import "./aboutme.css";
 
 function AboutMe() {
   const aboutRef = useRef<HTMLElement>(null);
   const location = useLocation();
+  const { setOpen } = useHamburgerContext();
+  
   useEffect(() => {
-    if (location?.state) {
+    if (location?.hash === "#aboutme") {
       aboutRef?.current?.scrollIntoView({ behavior: "smooth" });
+      setOpen(false)
     }
-  }, [location]);
+    return () => document.querySelector('.homepage')?.classList.remove('position')
+  }, [location, setOpen]);
   
   return (
     <section id= "aboutme" className="aboutme" ref={aboutRef}>

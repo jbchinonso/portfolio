@@ -1,13 +1,11 @@
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import {useHamburgerContext} from '../../context/hamburgerContext'
 import JB from '../../images/JB.svg';
 import './navbar.css'
 
 const Navbar: React.FC = () => {
-  const [open, setOpen] = useState(false)
-
-  
-
+  const { open, setOpen } = useHamburgerContext()
 
   return (
     <div className="navbar">

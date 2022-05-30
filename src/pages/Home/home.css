@@ -3,6 +3,12 @@
     margin: 0 auto;
 }
 
+.homepage.position{
+    height: 100vh;
+    overflow: hidden;
+}
+
+
 .contentWrapper{
         padding: 70px 50px;
     }
@@ -16,6 +22,20 @@
 .hero{
         padding-top: 3rem;
 }
+.overlay{
+    display:  none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.03)), rgb(22, 8, 47, 0.6);
+}
+
+.overlay.cover{
+    display: block;
+    height: 100vh;
+}
+
+
 
 @media only screen and (min-width:769px) {
     
