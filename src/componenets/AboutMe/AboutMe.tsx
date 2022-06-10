@@ -30,7 +30,7 @@ function AboutMe() {
 
           <Paragraph
             text={
-              "Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients."
+              "Fast-forward to today, and I’ve had the privilege of working at a Real Estate Company, a training company, a Logistics start-up, and a huge services corporation. My main focus these days is building accessible, scalable and maintainable products at Vertex Software Corp. for a variety of clients."
             }
           />
 
